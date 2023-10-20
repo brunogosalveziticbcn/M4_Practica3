@@ -4,17 +4,32 @@ body {
 }
 
 /*2. titol nivell 1 fons blanc lletra gris*/
-
+#titol-pagina {
+    background-color: white;
+    color: grey;
+}
 
 /*3. tots els strong en color verd i subratllats*/
-strong {
+.paragraf1 strong, .paragraf2 strong {
     color: green;
     text-decoration: underline;
 }
 
 /*4. enllaços del paràgraf2 en italica*/
-
+.paragraf2 a {
+    font-style: italic;
+}
 
 /*5. footer general del web centrat i lletra de 10px*/
+footer {
+    text-align: center;
+    font-size: 10px;
+}
 
-/*6. Canvia l'ordre de càrrega dels fitxers i mira què passa. Sabries modificar el teu codi per a que se seguís veient igual que abans de canviar l'ordre?*/
+/*6. Canvia l'ordre de càrrega dels fitxers i mira què passa. Sabries modificar el teu codi per a que se seguís veient igual que abans de canviar l'ordre?
+
+    Si canviem l'ordre de càrrega alguns dels canvis que hem fet es reverteixen, perque el CSS es carrega en cascada i les ordres es superponeixen.
+
+    Per a que els canvis siguin els mateixos podem posar els canvis proposats en aquest css al final de tot de l'altre fitxer .css
+
+*/
